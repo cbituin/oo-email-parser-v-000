@@ -10,6 +10,7 @@ class EmailParser
   
   @@all = []
   
+<<<<<<< HEAD
   def initialize(emails)
     # @@all << self
     @emails = emails
@@ -31,4 +32,15 @@ class EmailParser
   end
   
   
+=======
+  def initialize
+    # @@all << self
+    self.parse
+  end
+  
+  def self.parse(emails)
+    emails.split(/,|\s/)
+  end
+  
+>>>>>>> b24fb5201b05c20834dac005c0fd095967481f9d
 end
